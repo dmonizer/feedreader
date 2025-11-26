@@ -52,6 +52,7 @@ export const DEFAULT_SETTINGS: UserSettings = {
   itemsPerPage: 50,
   markAsReadOnScroll: false,
   globalIgnoredWords: [],
+  displayMode: 'cards',
   createdAt: new Date(),
   updatedAt: new Date(),
 };

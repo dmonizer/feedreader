@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { FeedCard } from './FeedCard';
 import { FeedForm } from './FeedForm';
 import { DeleteConfirmModal } from './DeleteConfirmModal';
+import { BrowseFeedsWizard } from './BrowseFeedsWizard';
 import { Input } from '@/components/ui/Input';
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
 import { useFeeds } from '@/hooks/useFeeds';
@@ -15,6 +16,7 @@ export function FeedList() {
   console.log('FeedList: useFeeds hook result:', { feeds: feeds.length, loading, error });
   const [showAddForm, setShowAddForm] = useState(false);
   const [showImportExport, setShowImportExport] = useState(false);
+  const [showBrowseWizard, setShowBrowseWizard] = useState(false);
 
   const [editingFeed, setEditingFeed] = useState<FeedSource | null>(null);
   const [deletingFeed, setDeletingFeed] = useState<FeedSource | null>(null);
@@ -32,7 +34,7 @@ export function FeedList() {
       feed.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       feed.url.toLowerCase().includes(searchQuery.toLowerCase()) ||
       feed.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      feed.tags?.filter(tag=>tag.toLowerCase().includes(searchQuery.toLowerCase()));
+      feed.tags?.filter(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
 
     const matchesTag = selectedTag === '' || (feed.tags || []).includes(selectedTag);
 
@@ -56,6 +58,14 @@ export function FeedList() {
       await deleteFeed(deletingFeed.id);
       setDeletingFeed(null);
     }
+  };
+
+  const handleAddMultipleFeeds = async (feedsData: Omit<FeedSource, 'id' | 'createdAt'>[]) => {
+    // Add feeds one by one
+    for (const feedData of feedsData) {
+      await addFeed(feedData);
+    }
+    setShowBrowseWizard(false);
   };
 
   if (loading) {
@@ -92,6 +102,12 @@ export function FeedList() {
           >
             Import/Export
           </Button> */}
+          <button
+            onClick={() => setShowBrowseWizard(true)}
+            className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+          >
+            Browse...
+          </button>
           <button
             onClick={() => {
               setShowAddForm(true);
@@ -197,6 +213,13 @@ export function FeedList() {
         onClose={() => setDeletingFeed(null)}
         onConfirm={handleDeleteFeed}
         feed={deletingFeed}
+      />
+
+      <BrowseFeedsWizard
+        isOpen={showBrowseWizard}
+        onClose={() => setShowBrowseWizard(false)}
+        onAddFeeds={handleAddMultipleFeeds}
+        existingFeeds={feeds}
       />
 
       <ImportExport

@@ -1,0 +1,968 @@
+[
+  {
+    "rss_url": "https://alistapart.com/main/feed",
+    "main_url": "https://alistapart.com",
+    "name": "A List Apart",
+    "topics": [
+      "technology",
+      "web design",
+      "development"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://venturebeat.com/feed/",
+    "main_url": "https://venturebeat.com",
+    "name": "VentureBeat",
+    "topics": [
+      "technology",
+      "ai",
+      "business"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://readwrite.com/feed/",
+    "main_url": "https://readwrite.com",
+    "name": "ReadWrite",
+    "topics": [
+      "technology",
+      "iot",
+      "fintech"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.androidcentral.com/rss.xml",
+    "main_url": "https://www.androidcentral.com",
+    "name": "Android Central",
+    "topics": [
+      "technology",
+      "android",
+      "mobile"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://hackernoon.com/feed",
+    "main_url": "https://hackernoon.com",
+    "name": "Hacker Noon",
+    "topics": [
+      "technology",
+      "coding",
+      "crypto"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://thenextweb.com/feed/",
+    "main_url": "https://thenextweb.com",
+    "name": "The Next Web",
+    "topics": [
+      "technology",
+      "startups",
+      "culture"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://rss.dw.com/rdf/rss-en-all",
+    "main_url": "https://www.dw.com/en",
+    "name": "Deutsche Welle (English)",
+    "topics": [
+      "news",
+      "international",
+      "germany"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.smithsonianmag.com/rss/latest_articles/",
+    "main_url": "https://www.smithsonianmag.com",
+    "name": "Smithsonian Magazine",
+    "topics": [
+      "science",
+      "history",
+      "culture"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://9to5mac.com/feed/",
+    "main_url": "https://9to5mac.com",
+    "name": "9to5Mac",
+    "topics": [
+      "technology",
+      "apple",
+      "mac"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "http://rss.slashdot.org/Slashdot/slashdot",
+    "main_url": "https://slashdot.org",
+    "name": "Slashdot",
+    "topics": [
+      "technology",
+      "news",
+      "linux"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.digitaltrends.com/feed/",
+    "main_url": "https://www.digitaltrends.com",
+    "name": "Digital Trends",
+    "topics": [
+      "technology",
+      "lifestyle",
+      "gadgets"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://gigaom.com/feed/",
+    "main_url": "https://gigaom.com",
+    "name": "Gigaom",
+    "topics": [
+      "technology",
+      "research"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.space.com/feeds/all",
+    "main_url": "https://www.space.com",
+    "name": "Space.com",
+    "topics": [
+      "science",
+      "space",
+      "astronomy"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.androidauthority.com/feed",
+    "main_url": "https://www.androidauthority.com",
+    "name": "Android Authority",
+    "topics": [
+      "technology",
+      "android",
+      "mobile"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://css-tricks.com/feed/",
+    "main_url": "https://css-tricks.com",
+    "name": "CSS-Tricks",
+    "topics": [
+      "technology",
+      "css",
+      "web development"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml",
+    "main_url": "https://www.channelnewsasia.com",
+    "name": "CNA (Channel News Asia)",
+    "topics": [
+      "news",
+      "asia",
+      "singapore"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.xda-developers.com/feed/",
+    "main_url": "https://www.xda-developers.com",
+    "name": "XDA Developers",
+    "topics": [
+      "technology",
+      "development",
+      "mobile"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "http://rss.sciam.com/ScientificAmerican-Global",
+    "main_url": "https://www.scientificamerican.com",
+    "name": "Scientific American",
+    "topics": [
+      "science",
+      "research",
+      "nature"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.20minutos.es/rss/",
+    "main_url": "https://www.20minutos.es",
+    "name": "20 Minutos",
+    "topics": [
+      "news",
+      "spain",
+      "international"
+    ],
+    "languages": [
+      "es"
+    ]
+  },
+  {
+    "rss_url": "https://www.nasa.gov/rss/dyn/image_of_the_day.rss",
+    "main_url": "https://www.nasa.gov",
+    "name": "NASA Image of the Day",
+    "topics": [
+      "science",
+      "space",
+      "photography"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://rss.sueddeutsche.de/rss/Topthemen",
+    "main_url": "https://www.sueddeutsche.de",
+    "name": "Süddeutsche Zeitung",
+    "topics": [
+      "news",
+      "germany",
+      "politics"
+    ],
+    "languages": [
+      "de"
+    ]
+  },
+  {
+    "rss_url": "https://lifehacker.com/rss",
+    "main_url": "https://lifehacker.com",
+    "name": "Lifehacker",
+    "topics": [
+      "technology",
+      "productivity",
+      "tips"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://rss.elconfidencial.com/",
+    "main_url": "https://www.elconfidencial.com",
+    "name": "El Confidencial",
+    "topics": [
+      "news",
+      "spain",
+      "politics"
+    ],
+    "languages": [
+      "es"
+    ]
+  },
+  {
+    "rss_url": "https://www.macrumors.com/macrumors.xml",
+    "main_url": "https://www.macrumors.com",
+    "name": "MacRumors",
+    "topics": [
+      "technology",
+      "apple",
+      "news"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://appleinsider.com/rss/news",
+    "main_url": "https://appleinsider.com",
+    "name": "AppleInsider",
+    "topics": [
+      "technology",
+      "apple",
+      "news"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.expressen.se/nyheter/",
+    "main_url": "https://www.expressen.se",
+    "name": "Expressen",
+    "topics": [
+      "news",
+      "sweden",
+      "scandinavia"
+    ],
+    "languages": [
+      "sv"
+    ]
+  },
+  {
+    "rss_url": "https://www.vg.no/rss/feed",
+    "main_url": "https://www.vg.no",
+    "name": "VG",
+    "topics": [
+      "news",
+      "norway"
+    ],
+    "languages": [
+      "no"
+    ]
+  },
+  {
+    "rss_url": "https://www.nrk.no/toppsaker.rss",
+    "main_url": "https://www.nrk.no",
+    "name": "NRK",
+    "topics": [
+      "news",
+      "norway",
+      "public"
+    ],
+    "languages": [
+      "no"
+    ]
+  },
+  {
+    "rss_url": "https://www.nouvelobs.com/rss.xml",
+    "main_url": "https://www.nouvelobs.com",
+    "name": "L'Obs",
+    "topics": [
+      "news",
+      "france",
+      "politics"
+    ],
+    "languages": [
+      "fr"
+    ]
+  },
+  {
+    "rss_url": "https://www.ansa.it/sito/ansait_rss.xml",
+    "main_url": "https://www.ansa.it",
+    "name": "ANSA.it",
+    "topics": [
+      "news",
+      "italy",
+      "international"
+    ],
+    "languages": [
+      "it"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.nos.nl/nosnieuwsalgemeen",
+    "main_url": "https://nos.nl",
+    "name": "NOS Nieuws",
+    "topics": [
+      "news",
+      "netherlands",
+      "public"
+    ],
+    "languages": [
+      "nl"
+    ]
+  },
+  {
+    "rss_url": "https://politiken.dk/rss/senestenyt.rss",
+    "main_url": "https://politiken.dk",
+    "name": "Politiken",
+    "topics": [
+      "news",
+      "denmark"
+    ],
+    "languages": [
+      "da"
+    ]
+  },
+  {
+    "rss_url": "https://www.sitepoint.com/feed",
+    "main_url": "https://www.sitepoint.com",
+    "name": "SitePoint",
+    "topics": [
+      "technology",
+      "development",
+      "design"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.irishtimes.com/cmlink/news-1.1319192",
+    "main_url": "https://www.irishtimes.com",
+    "name": "Irish Times",
+    "topics": [
+      "news",
+      "ireland"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.skynews.com/feeds/rss/home.xml",
+    "main_url": "https://news.sky.com",
+    "name": "Sky News",
+    "topics": [
+      "news",
+      "uk",
+      "international"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.latimes.com/world/rss2.0.xml",
+    "main_url": "https://www.latimes.com",
+    "name": "Los Angeles Times",
+    "topics": [
+      "news",
+      "us",
+      "california"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://hongkongfp.com/feed/",
+    "main_url": "https://hongkongfp.com",
+    "name": "Hong Kong Free Press",
+    "topics": [
+      "news",
+      "hong kong",
+      "asia"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://slate.com/feeds/all.rss",
+    "main_url": "https://slate.com",
+    "name": "Slate",
+    "topics": [
+      "news",
+      "politics",
+      "culture"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.ilfattoquotidiano.it/feed/",
+    "main_url": "https://www.ilfattoquotidiano.it",
+    "name": "Il Fatto Quotidiano",
+    "topics": [
+      "news",
+      "italy",
+      "politics"
+    ],
+    "languages": [
+      "it"
+    ]
+  },
+  {
+    "rss_url": "https://www.taiwannews.com.tw/en/rss",
+    "main_url": "https://www.taiwannews.com.tw/en",
+    "name": "Taiwan News",
+    "topics": [
+      "news",
+      "taiwan",
+      "asia"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://japantoday.com/feed",
+    "main_url": "https://japantoday.com",
+    "name": "Japan Today",
+    "topics": [
+      "news",
+      "japan",
+      "asia"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.entrepreneur.com/latest.rss",
+    "main_url": "https://www.entrepreneur.com",
+    "name": "Entrepreneur",
+    "topics": [
+      "business",
+      "startups",
+      "entrepreneurship"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.bangkokpost.com/rss/data/topstories.xml",
+    "main_url": "https://www.bangkokpost.com",
+    "name": "Bangkok Post",
+    "topics": [
+      "news",
+      "thailand",
+      "asia"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+    "main_url": "https://www.pbs.org/newshour",
+    "name": "PBS NewsHour",
+    "topics": [
+      "news",
+      "us",
+      "politics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.salon.com/feed/",
+    "main_url": "https://www.salon.com",
+    "name": "Salon",
+    "topics": [
+      "news",
+      "politics",
+      "culture"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.wallpaper.com/feeds/rss",
+    "main_url": "https://www.wallpaper.com",
+    "name": "Wallpaper*",
+    "topics": [
+      "design",
+      "lifestyle",
+      "architecture"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.telegraaf.nl/rss",
+    "main_url": "https://www.telegraaf.nl",
+    "name": "De Telegraaf",
+    "topics": [
+      "news",
+      "netherlands"
+    ],
+    "languages": [
+      "nl"
+    ]
+  },
+  {
+    "rss_url": "https://news.ycombinator.com/rss",
+    "main_url": "https://news.ycombinator.com",
+    "name": "Hacker News",
+    "topics": [
+      "technology",
+      "startups",
+      "programming"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://design-milk.com/feed/",
+    "main_url": "https://design-milk.com",
+    "name": "Design Milk",
+    "topics": [
+      "design",
+      "architecture",
+      "art"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.forbes.com/most-popular/feed/",
+    "main_url": "https://www.forbes.com",
+    "name": "Forbes",
+    "topics": [
+      "business",
+      "finance",
+      "entrepreneurship"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.nintendolife.com/feeds/latest",
+    "main_url": "https://www.nintendolife.com",
+    "name": "Nintendo Life",
+    "topics": [
+      "gaming",
+      "nintendo"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.snopes.com/feed/",
+    "main_url": "https://www.snopes.com",
+    "name": "Snopes",
+    "topics": [
+      "fact check",
+      "mythbusting"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.pushsquare.com/feeds/latest",
+    "main_url": "https://www.pushsquare.com",
+    "name": "Push Square",
+    "topics": [
+      "gaming",
+      "playstation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.purexbox.com/feeds/latest",
+    "main_url": "https://www.purexbox.com",
+    "name": "Pure Xbox",
+    "topics": [
+      "gaming",
+      "xbox"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://longreads.com/feed/",
+    "main_url": "https://longreads.com",
+    "name": "Longreads",
+    "topics": [
+      "culture",
+      "storytelling",
+      "nonfiction"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://theconversation.com/us/articles.atom",
+    "main_url": "https://theconversation.com",
+    "name": "The Conversation",
+    "topics": [
+      "academic",
+      "research",
+      "news"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://aeon.co/feed.rss",
+    "main_url": "https://aeon.co",
+    "name": "Aeon",
+    "topics": [
+      "philosophy",
+      "culture",
+      "essays"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://coolhunting.com/feed",
+    "main_url": "https://coolhunting.com",
+    "name": "Cool Hunting",
+    "topics": [
+      "design",
+      "culture",
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://pa.tedcdn.com/feeds/talks.rss",
+    "main_url": "https://www.ted.com",
+    "name": "TED Talks",
+    "topics": [
+      "education",
+      "ideas",
+      "talks"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://torrentfreak.com/feed/",
+    "main_url": "https://torrentfreak.com",
+    "name": "TorrentFreak",
+    "topics": [
+      "technology",
+      "copyright",
+      "privacy"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.creativebloq.com/feed",
+    "main_url": "https://www.creativebloq.com",
+    "name": "Creative Bloq",
+    "topics": [
+      "design",
+      "art",
+      "web design"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.computerworld.com/feed/",
+    "main_url": "https://www.computerworld.com",
+    "name": "Computerworld",
+    "topics": [
+      "technology",
+      "it",
+      "enterprise"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.networkworld.com/feed/",
+    "main_url": "https://www.networkworld.com",
+    "name": "Network World",
+    "topics": [
+      "technology",
+      "networking",
+      "it"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.tomshardware.com/feeds/all",
+    "main_url": "https://www.tomshardware.com",
+    "name": "Tom's Hardware",
+    "topics": [
+      "technology",
+      "pc",
+      "hardware"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.techradar.com/rss",
+    "main_url": "https://www.techradar.com",
+    "name": "TechRadar",
+    "topics": [
+      "technology",
+      "reviews",
+      "gadgets"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.cio.com/feed/",
+    "main_url": "https://www.cio.com",
+    "name": "CIO",
+    "topics": [
+      "technology",
+      "business",
+      "it"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://petapixel.com/feed/",
+    "main_url": "https://petapixel.com",
+    "name": "PetaPixel",
+    "topics": [
+      "photography",
+      "camera",
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://fstoppers.com/feed",
+    "main_url": "https://fstoppers.com",
+    "name": "Fstoppers",
+    "topics": [
+      "photography",
+      "art",
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://metro.co.uk/feed/",
+    "main_url": "https://metro.co.uk",
+    "name": "Metro UK",
+    "topics": [
+      "news",
+      "uk",
+      "entertainment"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.cnet.com/rss/news/",
+    "main_url": "https://www.cnet.com",
+    "name": "CNET",
+    "topics": [
+      "technology",
+      "news",
+      "reviews"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.thesun.co.uk/feed/",
+    "main_url": "https://www.thesun.co.uk",
+    "name": "The Sun",
+    "topics": [
+      "news",
+      "uk",
+      "entertainment"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.atlasobscura.com/feeds/latest",
+    "main_url": "https://www.atlasobscura.com",
+    "name": "Atlas Obscura",
+    "topics": [
+      "travel",
+      "culture",
+      "history"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.boredpanda.com/feed/",
+    "main_url": "https://www.boredpanda.com",
+    "name": "Bored Panda",
+    "topics": [
+      "entertainment",
+      "art",
+      "viral"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.dailymail.co.uk/articles.rss",
+    "main_url": "https://www.dailymail.co.uk",
+    "name": "Daily Mail",
+    "topics": [
+      "news",
+      "uk",
+      "entertainment"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.creativereview.co.uk/feed",
+    "main_url": "https://www.creativereview.co.uk",
+    "name": "Creative Review",
+    "topics": [
+      "design",
+      "art",
+      "advertising"
+    ],
+    "languages": [
+      "en"
+    ]
+  }
+]

@@ -1,7 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { ArticleCard } from './ArticleCard';
+import { ArticleListItem } from './ArticleListItem';
+import { ArticleCardWide } from './ArticleCardWide';
 import { dbService } from '@/lib/db';
 import type { FeedItem, FeedSource, LayoutConfig, UserSettings } from '@/lib/types';
 
@@ -13,23 +15,27 @@ interface ReaderLayoutProps {
   onMarkAsRead?: (articleId: string, isRead: boolean) => Promise<void>;
   onToggleStar?: (articleId: string, isStarred: boolean) => Promise<void>;
   children?: React.ReactNode;
+  displayMode?: UserSettings['displayMode'];
 }
 
 export function ReaderLayout({
-                               articles,
-                               allFeeds,
-                               loading = false,
-                               onLoadMore,
-                               onMarkAsRead,
-                               onToggleStar,
-                               children,
-                             }: ReaderLayoutProps) {
+  articles,
+  allFeeds,
+  loading = false,
+  onLoadMore,
+  onMarkAsRead,
+  onToggleStar,
+  children,
+  displayMode = 'cards',
+}: Readonly<ReaderLayoutProps>) {
   const [layoutConfig, setLayoutConfig] = useState<LayoutConfig>({
     columns: 1,
     columnMaxWidth: 400,
     isMobile: false,
   });
   const [settings, setSettings] = useState<UserSettings | null>(null);
+  const observerTarget = useRef<HTMLDivElement>(null);
+
   // Load user settings
   useEffect(() => {
     const loadSettings = async () => {
@@ -44,6 +50,24 @@ export function ReaderLayout({
 
     loadSettings();
   }, []);
+
+  // Infinite scroll observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && onLoadMore && !loading) {
+          onLoadMore();
+        }
+      },
+      { threshold: 0.1, rootMargin: '200px' }
+    );
+
+    if (observerTarget.current) {
+      observer.observe(observerTarget.current);
+    }
+
+    return () => observer.disconnect();
+  }, [onLoadMore, loading]);
 
   useEffect(() => {
     const updateLayout = () => {
@@ -93,22 +117,46 @@ export function ReaderLayout({
     return () => window.removeEventListener('resize', updateLayout);
   }, [settings]); // Re-run when settings change
 
-  const gridTemplateColumns = layoutConfig.isMobile
+  const gridTemplateColumns = layoutConfig.isMobile || displayMode === 'list' || displayMode === 'cards-wide'
     ? '1fr'
-    :`repeat(${layoutConfig.columns}, minmax(300px, ${layoutConfig.columnMaxWidth}px))`;
-  const parseArticles = (articles: FeedItem[]) => {
-    return Array.from(articles.map((article) => {
-      const feedSource = allFeeds.find(feed => feed.id===article.feedId);
-      return (
-        <ArticleCard
-          key={article.id}
-          article={article}
-          feedSource={feedSource}
-          onMarkAsRead={onMarkAsRead}
-          onToggleStar={onToggleStar}
-        />
-      );
-    }));
+    : `repeat(${layoutConfig.columns}, minmax(300px, ${layoutConfig.columnMaxWidth}px))`;
+
+  const renderArticle = (article: FeedItem) => {
+    const feedSource = allFeeds.find(feed => feed.id === article.feedId);
+
+    switch (displayMode) {
+      case 'list':
+        return (
+          <ArticleListItem
+            key={article.id}
+            article={article}
+            feedSource={feedSource}
+            onMarkAsRead={onMarkAsRead}
+            onToggleStar={onToggleStar}
+          />
+        );
+      case 'cards-wide':
+        return (
+          <ArticleCardWide
+            key={article.id}
+            article={article}
+            feedSource={feedSource}
+            onMarkAsRead={onMarkAsRead}
+            onToggleStar={onToggleStar}
+          />
+        );
+      case 'cards':
+      default:
+        return (
+          <ArticleCard
+            key={article.id}
+            article={article}
+            feedSource={feedSource}
+            onMarkAsRead={onMarkAsRead}
+            onToggleStar={onToggleStar}
+          />
+        );
+    }
   };
 
   return (
@@ -118,38 +166,29 @@ export function ReaderLayout({
 
       {/* Main article grid */}
       <div
-        className="grid gap-6 justify-center mx-auto px-4"
-        style={{
+        className={`
+          mx-auto px-4
+          ${displayMode === 'cards' ? 'grid gap-6 justify-center' : 'flex flex-col gap-4 max-w-4xl'}
+        `}
+        style={displayMode === 'cards' ? {
           gridTemplateColumns,
           maxWidth: layoutConfig.isMobile
             ? '100%'
-            :`${(layoutConfig.columnMaxWidth + 24) * layoutConfig.columns}px`,
-        }}
+            : `${(layoutConfig.columnMaxWidth + 24) * layoutConfig.columns}px`,
+        } : undefined}
       >
-        {parseArticles(articles)}
+        {articles.map(renderArticle)}
       </div>
 
-      {/* Loading indicator */}
-      {loading && (
-        <div className="flex justify-center py-8">
+      {/* Loading indicator and infinite scroll target */}
+      <div ref={observerTarget} className="flex justify-center py-8">
+        {loading && (
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-        </div>
-      )}
-
-      {/* Load more trigger (for infinite scroll) */}
-      {onLoadMore && !loading && articles.length > 0 && (
-        <div className="flex justify-center py-8">
-          <button
-            onClick={onLoadMore}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors"
-          >
-            Load More Articles
-          </button>
-        </div>
-      )}
+        )}
+      </div>
 
       {/* Empty state */}
-      {!loading && articles.length===0 && (
+      {!loading && articles.length === 0 && (
         <div className="text-center py-16">
           <div className="text-6xl mb-4">📰</div>
           <h3 className="text-xl font-medium mb-2">No articles yet</h3>

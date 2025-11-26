@@ -42,6 +42,7 @@ export interface UserSettings {
   itemsPerPage: number;
   markAsReadOnScroll: boolean;
   globalIgnoredWords: string[];
+  displayMode: 'list' | 'cards' | 'cards-wide';
   createdAt: Date;
   updatedAt: Date;
 }
@@ -51,6 +52,15 @@ export interface Tag {
   name: string;
   color: string;
   createdAt: Date;
+}
+
+// Initial feed data from public/feeds/initial.json
+export interface InitialFeedData {
+  rss_url: string;
+  main_url: string;
+  name: string;
+  topics: string[];
+  languages: string[];
 }
 
 // Worker communication types

@@ -1,5 +1,8 @@
 'use client';
 
+import { DisplayModeSelector } from './reader/DisplayModeSelector';
+import { UserSettings } from '@/lib/types';
+
 interface UpdateProgress {
   totalFeeds?: number;
   completedFeeds?: number;
@@ -24,6 +27,8 @@ interface ArticlesToolbarProps {
   onClearSelection: () => void;
   onMarkAllAsRead: () => void;
   onRefresh: () => void;
+  displayMode?: UserSettings['displayMode'];
+  onDisplayModeChange?: (mode: UserSettings['displayMode']) => void;
 }
 
 export default function ArticlesToolbar({
@@ -38,13 +43,15 @@ export default function ArticlesToolbar({
   onClearSelection,
   onMarkAllAsRead,
   onRefresh,
+  displayMode,
+  onDisplayModeChange,
 }: ArticlesToolbarProps) {
   return (
     <div className="bg-white border-b border-gray-200 sticky top-0 z-10">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            {title ? (<h1 className="text-2xl font-bold">{title}</h1>):''}
+            {title ? (<h1 className="text-2xl font-bold">{title}</h1>) : ''}
             <div className="hidden sm:flex items-center space-x-4 text-sm text-gray-600">
               <span>{counts.total} articles</span>
               {counts.unread > 0 && (
@@ -69,6 +76,15 @@ export default function ArticlesToolbar({
           </div>
 
           <div className="flex items-center space-x-2">
+            {displayMode && onDisplayModeChange && (
+              <div className="mr-2">
+                <DisplayModeSelector
+                  currentMode={displayMode}
+                  onChange={onDisplayModeChange}
+                />
+              </div>
+            )}
+
             <button
               onClick={onSidebarToggle}
               className="lg:hidden text-sm bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 px-3 py-1 rounded transition-colors"

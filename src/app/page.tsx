@@ -9,7 +9,8 @@ import ArticlesToolbar from '@/components/ArticlesToolbar';
 import { useArticles } from '@/hooks/useArticles';
 import { useBackgroundUpdates } from '@/hooks/useBackgroundUpdates';
 import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts';
-import type { FilterState } from '@/lib/types';
+import { dbService } from '@/lib/db';
+import type { FilterState, UserSettings } from '@/lib/types';
 
 export default function Home() {
   const [filters, setFilters] = useState<FilterState>({
@@ -23,6 +24,7 @@ export default function Home() {
   const [sidebarExpanded, setSidebarExpanded] = useState(false);
   const [selectedArticles, setSelectedArticles] = useState<string[]>([]);
   const [currentArticleIndex, setCurrentArticleIndex] = useState(-1);
+  const [displayMode, setDisplayMode] = useState<UserSettings['displayMode']>('cards');
 
   const {
     articles,
@@ -52,6 +54,31 @@ export default function Home() {
       scheduleAllFeeds();
     }
   }, [workerInitialized, allFeeds.length, scheduleAllFeeds]);
+
+  // Load display mode settings
+  useEffect(() => {
+    const loadSettings = async () => {
+      try {
+        await dbService.initialize();
+        const settings = await dbService.getSettings();
+        if (settings.displayMode) {
+          setDisplayMode(settings.displayMode);
+        }
+      } catch (error) {
+        console.error('Failed to load settings:', error);
+      }
+    };
+    loadSettings();
+  }, []);
+
+  const handleDisplayModeChange = async (mode: UserSettings['displayMode']) => {
+    setDisplayMode(mode);
+    try {
+      await dbService.updateSettings({ displayMode: mode });
+    } catch (error) {
+      console.error('Failed to save display mode:', error);
+    }
+  };
 
   // Bulk operations
   // const toggleArticleSelection = useCallback((articleId: string) => {
@@ -242,6 +269,8 @@ export default function Home() {
         onMarkSelectedAsRead={markSelectedAsRead}
         onClearSelection={clearSelection}
         onMarkAllAsRead={markAllAsRead}
+        displayMode={displayMode}
+        onDisplayModeChange={handleDisplayModeChange}
         onRefresh={async () => {
           if (backgroundUpdating) return;
           try {
@@ -277,6 +306,7 @@ export default function Home() {
               onLoadMore={hasMore ? loadMore : undefined}
               onMarkAsRead={markAsRead}
               onToggleStar={toggleStar}
+              displayMode={displayMode}
             />
           </div>
         </div>

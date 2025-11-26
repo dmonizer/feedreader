@@ -1,0 +1,438 @@
+[
+  {
+    "rss_url": "https://www.clarin.com/rss/lo-ultimo/",
+    "main_url": "https://www.clarin.com",
+    "name": "Clarín",
+    "topics": [
+      "news",
+      "argentina"
+    ],
+    "languages": [
+      "es"
+    ]
+  },
+  {
+    "rss_url": "https://www.ilsole24ore.com/rss/italia.xml",
+    "main_url": "https://www.ilsole24ore.com",
+    "name": "Il Sole 24 Ore",
+    "topics": [
+      "business",
+      "finance",
+      "italy"
+    ],
+    "languages": [
+      "it"
+    ]
+  },
+  {
+    "rss_url": "https://www.marca.com/rss/portada.xml",
+    "main_url": "https://www.marca.com",
+    "name": "MARCA",
+    "topics": [
+      "sports",
+      "spain",
+      "football"
+    ],
+    "languages": [
+      "es"
+    ]
+  },
+  {
+    "rss_url": "https://www.ansa.it/sito/ansait_rss.xml",
+    "main_url": "https://www.ansa.it",
+    "name": "ANSA.it",
+    "topics": [
+      "news",
+      "italy"
+    ],
+    "languages": [
+      "it"
+    ]
+  },
+  {
+    "rss_url": "https://www.heise.de/rss/heise-atom.xml",
+    "main_url": "https://www.heise.de",
+    "name": "Heise Online",
+    "topics": [
+      "technology",
+      "it",
+      "germany"
+    ],
+    "languages": [
+      "de"
+    ]
+  },
+  {
+    "rss_url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml",
+    "main_url": "https://www.lanacion.com.ar",
+    "name": "La Nación",
+    "topics": [
+      "news",
+      "argentina"
+    ],
+    "languages": [
+      "es"
+    ]
+  },
+  {
+    "rss_url": "https://www.theage.com.au/rss/feed.xml",
+    "main_url": "https://www.theage.com.au",
+    "name": "The Age",
+    "topics": [
+      "news",
+      "australia",
+      "melbourne"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.smh.com.au/rss/feed.xml",
+    "main_url": "https://www.smh.com.au",
+    "name": "Sydney Morning Herald",
+    "topics": [
+      "news",
+      "australia"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
+    "main_url": "https://allafrica.com",
+    "name": "AllAfrica",
+    "topics": [
+      "news",
+      "africa"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://hyperallergic.com/feed/",
+    "main_url": "https://hyperallergic.com",
+    "name": "Hyperallergic",
+    "topics": [
+      "art",
+      "culture",
+      "criticism"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://cointelegraph.com/rss",
+    "main_url": "https://cointelegraph.com",
+    "name": "Cointelegraph",
+    "topics": [
+      "technology",
+      "crypto",
+      "blockchain"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.handelsblatt.com/contentexport/feed/top-themen",
+    "main_url": "https://www.handelsblatt.com",
+    "name": "Handelsblatt",
+    "topics": [
+      "business",
+      "finance",
+      "germany"
+    ],
+    "languages": [
+      "de"
+    ]
+  },
+  {
+    "rss_url": "https://css-tricks.com/feed/",
+    "main_url": "https://css-tricks.com",
+    "name": "CSS-Tricks",
+    "topics": [
+      "technology",
+      "development",
+      "web design"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.eurogamer.net/feed",
+    "main_url": "https://www.eurogamer.net",
+    "name": "Eurogamer",
+    "topics": [
+      "gaming",
+      "uk"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.space.com/feeds/all",
+    "main_url": "https://www.space.com",
+    "name": "Space.com",
+    "topics": [
+      "science",
+      "space",
+      "astronomy"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+    "main_url": "https://www.marketwatch.com",
+    "name": "MarketWatch",
+    "topics": [
+      "business",
+      "finance",
+      "markets"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.rockpapershotgun.com/feed",
+    "main_url": "https://www.rockpapershotgun.com",
+    "name": "Rock Paper Shotgun",
+    "topics": [
+      "gaming",
+      "pc"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.smashingmagazine.com/feed",
+    "main_url": "https://www.smashingmagazine.com",
+    "name": "Smashing Magazine",
+    "topics": [
+      "technology",
+      "design",
+      "development"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.gematsu.com/feed",
+    "main_url": "https://www.gematsu.com",
+    "name": "Gematsu",
+    "topics": [
+      "gaming",
+      "japan"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://news.err.ee/rss",
+    "main_url": "https://news.err.ee",
+    "name": "ERR News (English)",
+    "topics": [
+      "news",
+      "estonia"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://lenta.ru/rss/news",
+    "main_url": "https://lenta.ru",
+    "name": "Lenta.ru",
+    "topics": [
+      "news",
+      "russia"
+    ],
+    "languages": [
+      "ru"
+    ]
+  },
+  {
+    "rss_url": "https://mainichi.jp/rss/etc/mainichi-flash.rss",
+    "main_url": "https://mainichi.jp",
+    "name": "The Mainichi Shimbun",
+    "topics": [
+      "news",
+      "japan"
+    ],
+    "languages": [
+      "ja"
+    ]
+  },
+  {
+    "rss_url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+    "main_url": "https://www.nasa.gov",
+    "name": "NASA Breaking News",
+    "topics": [
+      "science",
+      "space"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://yle.fi/uutiset/rss/uutiset.rss",
+    "main_url": "https://yle.fi",
+    "name": "Yle Uutiset",
+    "topics": [
+      "news",
+      "finland"
+    ],
+    "languages": [
+      "fi"
+    ]
+  },
+  {
+    "rss_url": "https://www.svt.se/nyheter/rss.xml",
+    "main_url": "https://www.svt.se",
+    "name": "SVT Nyheter",
+    "topics": [
+      "news",
+      "sweden"
+    ],
+    "languages": [
+      "sv"
+    ]
+  },
+  {
+    "rss_url": "https://www.kommersant.ru/RSS/news.xml",
+    "main_url": "https://www.kommersant.ru",
+    "name": "Kommersant",
+    "topics": [
+      "business",
+      "russia"
+    ],
+    "languages": [
+      "ru"
+    ]
+  },
+  {
+    "rss_url": "https://www.artnews.com/feed/",
+    "main_url": "https://www.artnews.com",
+    "name": "ARTnews",
+    "topics": [
+      "art",
+      "culture"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://abduzeedo.com/rss.xml",
+    "main_url": "https://abduzeedo.com",
+    "name": "Abduzeedo",
+    "topics": [
+      "design",
+      "art",
+      "inspiration"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml",
+    "main_url": "https://www.folha.uol.com.br",
+    "name": "Folha de S.Paulo",
+    "topics": [
+      "news",
+      "brazil",
+      "latin america"
+    ],
+    "languages": [
+      "pt"
+    ]
+  },
+  {
+    "rss_url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+    "main_url": "https://www.cnbc.com",
+    "name": "CNBC Top News",
+    "topics": [
+      "business",
+      "finance",
+      "markets"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://sdtimes.com/feed/",
+    "main_url": "https://sdtimes.com",
+    "name": "SD Times",
+    "topics": [
+      "technology",
+      "software development"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://asia.nikkei.com/rss/feed/nar",
+    "main_url": "https://asia.nikkei.com",
+    "name": "Nikkei Asia",
+    "topics": [
+      "business",
+      "asia",
+      "economy"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://g1.globo.com/dynamo/rss2.xml",
+    "main_url": "https://g1.globo.com",
+    "name": "G1 - Globo",
+    "topics": [
+      "news",
+      "brazil"
+    ],
+    "languages": [
+      "pt"
+    ]
+  },
+  {
+    "rss_url": "https://news.ycombinator.com/rss",
+    "main_url": "https://news.ycombinator.com",
+    "name": "Hacker News",
+    "topics": [
+      "technology",
+      "startups",
+      "programming"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/home/?outputType=xml",
+    "main_url": "https://www.nzherald.co.nz",
+    "name": "New Zealand Herald",
+    "topics": [
+      "news",
+      "new zealand"
+    ],
+    "languages": [
+      "en"
+    ]
+  }
+]

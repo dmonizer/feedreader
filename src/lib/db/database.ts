@@ -88,16 +88,24 @@ export class DatabaseService {
     const tx = db.transaction(['feedSources', 'feedItems'], 'readwrite');
 
     try {
+      console.log(`[Database] Deleting feed ${id}`);
       // Delete the feed
       await tx.objectStore('feedSources').delete(id);
 
       // Delete all items from this feed
       const itemsIndex = tx.objectStore('feedItems').index('by-feedId');
       const items = await itemsIndex.getAllKeys(id);
-      await Promise.all(items.map(key => tx.objectStore('feedItems').delete(key)));
+      console.log(`[Database] Found ${items.length} items to delete for feed ${id}`);
+
+      await Promise.all(items.map(key => {
+        // console.log(`[Database] Deleting item ${key}`);
+        return tx.objectStore('feedItems').delete(key);
+      }));
 
       await tx.done;
+      console.log(`[Database] Feed ${id} and items deleted successfully`);
     } catch (error) {
+      console.error(`[Database] Failed to delete feed ${id}:`, error);
       tx.abort();
       throw new Error(`Failed to delete feed: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }

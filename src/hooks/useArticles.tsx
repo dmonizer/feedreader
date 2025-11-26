@@ -171,7 +171,7 @@ export function useArticles({
     });
 
     return filtered;
-  }, [articles, allFeeds, globalSettings, filters, sortBy, sortOrder]);
+  }, [articles, allFeeds, globalSettings, sortBy, sortOrder, filters.showRead, filters.showStarred, filters.searchQuery, filters.filterMode, filters.selectedTags]);
 
   // Mark article as read/unread
   const markAsRead = useCallback(async (articleId: string, isRead: boolean) => {
