@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { SearchBar } from './SearchBar';
 import type { FilterState, FeedSource } from '@/lib/types';
 import Image from 'next/image';
@@ -29,6 +30,9 @@ export function FilterSidebar({
   isExpanded = false,
   onExpandToggle
 }: FilterSidebarProps) {
+  const [tagsExpanded, setTagsExpanded] = useState(true);
+  const [sourcesExpanded, setSourcesExpanded] = useState(true);
+
   // Get all unique tags from feeds
   const allTags = Array.from(
     new Set(allFeeds.flatMap(feed => feed.tags || []))
@@ -44,6 +48,15 @@ export function FilterSidebar({
       : [...filters.selectedTags, tag];
 
     onFiltersChange({ ...filters, selectedTags: newSelectedTags });
+  };
+
+  const handleFeedToggle = (feedId: string) => {
+    const selectedFeedIds = filters.selectedFeedIds || [];
+    const newSelectedFeedIds = selectedFeedIds.includes(feedId)
+      ? selectedFeedIds.filter(id => id !== feedId)
+      : [...selectedFeedIds, feedId];
+
+    onFiltersChange({ ...filters, selectedFeedIds: newSelectedFeedIds });
   };
 
   const handleFilterModeToggle = () => {
@@ -64,6 +77,7 @@ export function FilterSidebar({
   const clearAllFilters = () => {
     onFiltersChange({
       selectedTags: [],
+      selectedFeedIds: [],
       filterMode: 'OR',
       searchQuery: '',
       showRead: true,
@@ -73,6 +87,7 @@ export function FilterSidebar({
 
   const hasActiveFilters =
     filters.selectedTags.length > 0 ||
+    (filters.selectedFeedIds && filters.selectedFeedIds.length > 0) ||
     filters.searchQuery.length > 0 ||
     !filters.showRead ||
     !filters.showStarred;
@@ -87,14 +102,12 @@ export function FilterSidebar({
       )}
 
       <div
-        className={`fixed lg:relative inset-y-0 left-0 z-30 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 transform transition-all duration-300 ease-in-out ${
-          isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
-        } ${
-          isExpanded ? 'w-80' : 'w-16 lg:w-16'
-        }`}
+        className={`fixed lg:sticky lg:top-0 inset-y-0 left-0 z-30 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 transform transition-all duration-300 ease-in-out lg:h-screen ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
+          } ${isExpanded ? 'w-80' : 'w-16 lg:w-16'
+          }`}
       >
         <div className="flex flex-col h-full">
-          <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+          <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 flex-shrink-0">
             {isExpanded ? (
               <>
                 <h2 className="text-lg font-semibold dark:text-white">Filters</h2>
@@ -156,7 +169,7 @@ export function FilterSidebar({
           </div>
 
           {isExpanded ? (
-            <div className="flex-1 overflow-y-auto p-4 space-y-6">
+            <div className="flex-1 overflow-y-auto p-4 space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Search
@@ -199,84 +212,128 @@ export function FilterSidebar({
               </div>
 
               {allTags.length > 0 && (
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                      Tags
-                    </label>
+                <div className="flex flex-col">
+                  <button
+                    onClick={() => setTagsExpanded(!tagsExpanded)}
+                    className="flex items-center justify-between mb-2 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded -mx-2"
+                  >
+                    <div className="flex items-center gap-2">
+                      <svg
+                        className={`w-4 h-4 transition-transform ${tagsExpanded ? 'rotate-90' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                      <label className="text-sm font-medium text-gray-700 dark:text-gray-300 cursor-pointer">
+                        Tags
+                      </label>
+                    </div>
                     {filters.selectedTags.length > 1 && (
                       <button
-                        onClick={handleFilterModeToggle}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleFilterModeToggle();
+                        }}
                         className="text-xs bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-300 px-2 py-1 rounded transition-colors"
                         title={`Currently using ${filters.filterMode} logic`}
                       >
                         {filters.filterMode}
                       </button>
                     )}
-                  </div>
-                  <div className="space-y-2 max-h-64 overflow-y-auto">
-                    {allTags.map((tag) => {
-                      const feedsWithTag = allFeeds.filter(feed =>
-                        (feed.tags || []).includes(tag)
-                      );
+                  </button>
+                  {tagsExpanded && (
+                    <div className={`space-y-2 overflow-y-auto ${sourcesExpanded ? 'max-h-48' : 'flex-1'}`}>
+                      {allTags.map((tag) => {
+                        const feedsWithTag = allFeeds.filter(feed =>
+                          (feed.tags || []).includes(tag)
+                        );
 
-                      return (
-                        <label key={tag} className="flex items-center group">
-                          <input
-                            type="checkbox"
-                            checked={filters.selectedTags.includes(tag)}
-                            onChange={() => handleTagToggle(tag)}
-                            className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                          />
-                          <span className="ml-2 text-sm flex-1 truncate group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-blue-400">
-                            {tag}
-                          </span>
-                          <span className="text-xs text-gray-500 dark:text-gray-400 ml-1">
-                            ({feedsWithTag.length})
-                          </span>
-                        </label>
-                      );
-                    })}
-                  </div>
+                        return (
+                          <label key={tag} className="flex items-center group">
+                            <input
+                              type="checkbox"
+                              checked={filters.selectedTags.includes(tag)}
+                              onChange={() => handleTagToggle(tag)}
+                              className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                            />
+                            <span className="ml-2 text-sm flex-1 truncate group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-blue-400">
+                              {tag}
+                            </span>
+                            <span className="text-xs text-gray-500 dark:text-gray-400 ml-1">
+                              ({feedsWithTag.length})
+                            </span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               )}
 
               {allFeeds.length > 0 && (
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
-                    Sources
-                  </label>
-                  <div className="space-y-2 max-h-64 overflow-y-auto">
-                    {allFeeds.map((feed) => (
-                      <div
-                        key={feed.id}
-                        className="flex items-center p-2 hover:bg-gray-50 dark:hover:bg-gray-700 rounded text-sm"
+                <div className="flex flex-col">
+                  <button
+                    onClick={() => setSourcesExpanded(!sourcesExpanded)}
+                    className="flex items-center justify-between mb-2 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded -mx-2"
+                  >
+                    <div className="flex items-center gap-2">
+                      <svg
+                        className={`w-4 h-4 transition-transform ${sourcesExpanded ? 'rotate-90' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                       >
-                        {feed.favicon && (
-                          <Image
-                            src={feed.favicon}
-                            alt=""
-                            className="w-4 h-4 rounded mr-2 flex-shrink-0"
-                            onError={(e) => {
-                              (e.target as HTMLImageElement).style.display = 'none';
-                            }}
-                          />
-                        )}
-                        <span className="flex-1 truncate dark:text-gray-300" title={feed.title}>
-                          {feed.title}
-                        </span>
-                        <span
-                          className={`text-xs px-2 py-1 rounded ${
-                            feed.isActive
-                              ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
-                              : 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400'
-                          }`}
-                        >
-                          {feed.isActive ? 'Active' : 'Inactive'}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                      <label className="text-sm font-medium text-gray-700 dark:text-gray-300 cursor-pointer">
+                        Sources
+                      </label>
+                    </div>
+                  </button>
+                  {sourcesExpanded && (
+                    <div className={`space-y-1 overflow-y-auto ${tagsExpanded ? 'max-h-48' : 'flex-1'}`}>
+                      {allFeeds.map((feed) => {
+                        const isSelected = (filters.selectedFeedIds || []).includes(feed.id);
+                        return (
+                          <button
+                            key={feed.id}
+                            onClick={() => handleFeedToggle(feed.id)}
+                            className={`w-full flex items-center p-2 rounded text-sm transition-colors ${isSelected
+                                ? 'bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700'
+                                : 'hover:bg-gray-50 dark:hover:bg-gray-700'
+                              }`}
+                          >
+                            {feed.favicon && (
+                              <img
+                                src={feed.favicon}
+                                alt=""
+                                className="w-4 h-4 rounded mr-2 flex-shrink-0"
+                                onError={(e) => {
+                                  (e.target as HTMLImageElement).style.display = 'none';
+                                }}
+                              />
+                            )}
+                            <span className={`flex-1 truncate text-left ${isSelected
+                                ? 'text-blue-700 dark:text-blue-300 font-medium'
+                                : 'dark:text-gray-300'
+                              }`} title={feed.title}>
+                              {feed.title}
+                            </span>
+                            <span
+                              className={`text-xs px-2 py-0.5 rounded ml-2 ${feed.isActive
+                                  ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
+                                  : 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400'
+                                }`}
+                            >
+                              {feed.isActive ? '●' : '○'}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -303,6 +360,15 @@ export function FilterSidebar({
                 </div>
               )}
 
+              {(filters.selectedFeedIds && filters.selectedFeedIds.length > 0) && (
+                <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded" title={`${filters.selectedFeedIds.length} sources selected`}>
+                  <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                  </svg>
+                  <div className="text-xs mt-1 text-center font-medium">{filters.selectedFeedIds.length}</div>
+                </div>
+              )}
+
               {(!filters.showRead || !filters.showStarred) && (
                 <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded" title="Status filters active">
                   <svg className="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -313,7 +379,7 @@ export function FilterSidebar({
             </div>
           )}
 
-          <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+          <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 flex-shrink-0">
             {isExpanded ? (
               <div className="text-xs text-gray-600 dark:text-gray-400 space-y-1">
                 <div>Total: {articleCounts.total} articles</div>

@@ -149,6 +149,13 @@ export function useArticles({
       });
     }
 
+    // Feed filter
+    if (filters.selectedFeedIds && filters.selectedFeedIds.length > 0) {
+      filtered = filtered.filter(article =>
+        filters.selectedFeedIds!.includes(article.feedId)
+      );
+    }
+
     // Sort articles
     filtered.sort((a, b) => {
       let comparison = 0;

@@ -116,6 +116,7 @@ export interface ParsedFeed {
 // UI state types
 export interface FilterState {
   selectedTags: string[];
+  selectedFeedIds?: string[];
   filterMode: 'AND' | 'OR';
   searchQuery: string;
   showRead: boolean;

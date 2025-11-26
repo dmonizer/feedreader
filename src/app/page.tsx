@@ -15,6 +15,7 @@ import type { FilterState, UserSettings } from '@/lib/types';
 export default function Home() {
   const [filters, setFilters] = useState<FilterState>({
     selectedTags: [],
+    selectedFeedIds: [],
     filterMode: 'OR',
     searchQuery: '',
     showRead: true,
@@ -256,48 +257,49 @@ export default function Home() {
     );
   }
 
+
   return (
-    <main className="min-h-screen bg-gray-50">
-      <ArticlesToolbar
-        title={undefined}
-        counts={counts}
-        updateProgress={updateProgress}
-        selectedArticles={selectedArticles}
-        loading={loading}
-        backgroundUpdating={backgroundUpdating}
-        onSidebarToggle={() => setSidebarOpen(!sidebarOpen)}
-        onMarkSelectedAsRead={markSelectedAsRead}
-        onClearSelection={clearSelection}
-        onMarkAllAsRead={markAllAsRead}
-        displayMode={displayMode}
-        onDisplayModeChange={handleDisplayModeChange}
-        onRefresh={async () => {
-          if (backgroundUpdating) return;
-          try {
-            await triggerBackgroundUpdate();
-          } catch (error) {
-            console.error('Background update failed:', error);
-            refresh();
-          }
-        }}
+    <main className="flex min-h-screen bg-gray-50">
+      {/* Filter Sidebar */}
+      <FilterSidebar
+        filters={filters}
+        onFiltersChange={setFilters}
+        allFeeds={allFeeds}
+        isOpen={sidebarOpen}
+        onToggle={() => setSidebarOpen(!sidebarOpen)}
+        articleCounts={counts}
+        isExpanded={sidebarExpanded}
+        onExpandToggle={() => setSidebarExpanded(!sidebarExpanded)}
       />
 
-      {/* Main Content */}
-      <div className="flex">
-        {/* Filter Sidebar */}
-        <FilterSidebar
-          filters={filters}
-          onFiltersChange={setFilters}
-          allFeeds={allFeeds}
-          isOpen={sidebarOpen}
-          onToggle={() => setSidebarOpen(!sidebarOpen)}
-          articleCounts={counts}
-          isExpanded={sidebarExpanded}
-          onExpandToggle={() => setSidebarExpanded(!sidebarExpanded)}
+      {/* Main Content Area */}
+      <div className="flex-1 flex flex-col min-w-0">
+        <ArticlesToolbar
+          title={undefined}
+          counts={counts}
+          updateProgress={updateProgress}
+          selectedArticles={selectedArticles}
+          loading={loading}
+          backgroundUpdating={backgroundUpdating}
+          onSidebarToggle={() => setSidebarOpen(!sidebarOpen)}
+          onMarkSelectedAsRead={markSelectedAsRead}
+          onClearSelection={clearSelection}
+          onMarkAllAsRead={markAllAsRead}
+          displayMode={displayMode}
+          onDisplayModeChange={handleDisplayModeChange}
+          onRefresh={async () => {
+            if (backgroundUpdating) return;
+            try {
+              await triggerBackgroundUpdate();
+            } catch (error) {
+              console.error('Background update failed:', error);
+              refresh();
+            }
+          }}
         />
 
         {/* Articles */}
-        <div className="flex-1 lg:ml-0">
+        <div className="flex-1 overflow-auto">
           <div className="container mx-auto py-6">
             <ReaderLayout
               articles={articles}
