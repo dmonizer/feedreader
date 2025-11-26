@@ -1,0 +1,1943 @@
+[
+  {
+    "rss_url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
+    "main_url": "https://www.nytimes.com/section/politics",
+    "name": "New York Times Politics",
+    "topics": [
+      "politics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+    "main_url": "https://www.nytimes.com/section/business",
+    "name": "New York Times Business",
+    "topics": [
+      "business",
+      "economy"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
+    "main_url": "https://www.bbc.com/news/world/europe",
+    "name": "BBC Europe",
+    "topics": [
+      "news",
+      "europe"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/rss.xml",
+    "main_url": "https://www.bbc.com/news",
+    "name": "BBC News",
+    "topics": [
+      "news",
+      "international"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "main_url": "https://www.bbc.com/news/world",
+    "name": "BBC World News",
+    "topics": [
+      "news",
+      "world"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+    "main_url": "https://www.nytimes.com/section/world",
+    "name": "New York Times World",
+    "topics": [
+      "news",
+      "world"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+    "main_url": "https://www.bbc.com/news/world/middle_east",
+    "name": "BBC Middle East",
+    "topics": [
+      "news",
+      "middle east"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+    "main_url": "https://www.bbc.com/news/business",
+    "name": "BBC Business",
+    "topics": [
+      "business",
+      "economy",
+      "finance"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "http://rss.cnn.com/rss/cnn_us.rss",
+    "main_url": "https://www.cnn.com/us",
+    "name": "CNN US",
+    "topics": [
+      "news",
+      "us",
+      "domestic"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+    "main_url": "https://www.nytimes.com",
+    "name": "New York Times",
+    "topics": [
+      "news",
+      "politics",
+      "business"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/uk/rss.xml",
+    "main_url": "https://www.bbc.com/news/uk",
+    "name": "BBC UK News",
+    "topics": [
+      "news",
+      "uk",
+      "local"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "http://rss.cnn.com/rss/edition.rss",
+    "main_url": "https://www.cnn.com",
+    "name": "CNN International",
+    "topics": [
+      "news",
+      "international",
+      "politics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "http://rss.cnn.com/rss/cnn_allpolitics.rss",
+    "main_url": "https://www.cnn.com/politics",
+    "name": "CNN Politics",
+    "topics": [
+      "politics",
+      "news"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "http://rss.cnn.com/rss/cnn_world.rss",
+    "main_url": "https://www.cnn.com/world",
+    "name": "CNN World",
+    "topics": [
+      "news",
+      "world",
+      "international"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/uk-news/rss",
+    "main_url": "https://www.theguardian.com/uk-news",
+    "name": "The Guardian UK",
+    "topics": [
+      "news",
+      "uk",
+      "local"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/us-news/rss",
+    "main_url": "https://www.theguardian.com/us-news",
+    "name": "The Guardian US",
+    "topics": [
+      "news",
+      "us",
+      "politics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/health/rss.xml",
+    "main_url": "https://www.bbc.com/news/health",
+    "name": "BBC Health",
+    "topics": [
+      "health",
+      "medicine"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/sport/rss.xml",
+    "main_url": "https://www.bbc.com/sport",
+    "name": "BBC Sport",
+    "topics": [
+      "sports"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/world/rss",
+    "main_url": "https://www.theguardian.com",
+    "name": "The Guardian World",
+    "topics": [
+      "news",
+      "world",
+      "politics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/politics/rss",
+    "main_url": "https://www.theguardian.com/politics",
+    "name": "The Guardian Politics",
+    "topics": [
+      "politics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
+    "main_url": "https://www.bbc.com/news/world/us_and_canada",
+    "name": "BBC US & Canada",
+    "topics": [
+      "news",
+      "us",
+      "canada"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+    "main_url": "https://www.bbc.com/news/science_and_environment",
+    "name": "BBC Science & Environment",
+    "topics": [
+      "science",
+      "environment",
+      "climate"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+    "main_url": "https://www.bbc.com/news/world/asia",
+    "name": "BBC Asia",
+    "topics": [
+      "news",
+      "asia"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/science/rss",
+    "main_url": "https://www.theguardian.com/science",
+    "name": "The Guardian Science",
+    "topics": [
+      "science"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/world/africa/rss.xml",
+    "main_url": "https://www.bbc.com/news/world/africa",
+    "name": "BBC Africa",
+    "topics": [
+      "news",
+      "africa"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+    "main_url": "https://www.bbc.com/news/technology",
+    "name": "BBC Technology",
+    "topics": [
+      "technology",
+      "tech",
+      "innovation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    "main_url": "https://www.nytimes.com/section/technology",
+    "name": "New York Times Technology",
+    "topics": [
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/environment/rss",
+    "main_url": "https://www.theguardian.com/environment",
+    "name": "The Guardian Environment",
+    "topics": [
+      "environment",
+      "climate"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/business/rss",
+    "main_url": "https://www.theguardian.com/business",
+    "name": "The Guardian Business",
+    "topics": [
+      "business",
+      "economy"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theverge.com/rss/index.xml",
+    "main_url": "https://www.theverge.com",
+    "name": "The Verge",
+    "topics": [
+      "technology",
+      "gadgets",
+      "science"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/sport/rss",
+    "main_url": "https://www.theguardian.com/sport",
+    "name": "The Guardian Sport",
+    "topics": [
+      "sports"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/culture/rss",
+    "main_url": "https://www.theguardian.com/culture",
+    "name": "The Guardian Culture",
+    "topics": [
+      "culture",
+      "arts"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
+    "main_url": "https://www.nytimes.com/section/us",
+    "name": "New York Times US",
+    "topics": [
+      "news",
+      "us"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.wired.com/feed/rss",
+    "main_url": "https://www.wired.com",
+    "name": "Wired",
+    "topics": [
+      "technology",
+      "culture",
+      "business"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
+    "main_url": "https://www.bbc.com/news/entertainment_and_arts",
+    "name": "BBC Entertainment & Arts",
+    "topics": [
+      "entertainment",
+      "arts",
+      "culture"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/technology/rss",
+    "main_url": "https://www.theguardian.com/technology",
+    "name": "The Guardian Technology",
+    "topics": [
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://mashable.com/feeds/rss/all",
+    "main_url": "https://mashable.com",
+    "name": "Mashable",
+    "topics": [
+      "technology",
+      "digital culture",
+      "entertainment"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.feedburner.com/TechCrunch/",
+    "main_url": "https://techcrunch.com",
+    "name": "TechCrunch",
+    "topics": [
+      "technology",
+      "startups",
+      "business"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.arstechnica.com/arstechnica/index",
+    "main_url": "https://arstechnica.com",
+    "name": "Ars Technica",
+    "topics": [
+      "technology",
+      "science",
+      "policy"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.wired.com/feed/category/science/latest/rss",
+    "main_url": "https://www.wired.com/category/science",
+    "name": "Wired Science",
+    "topics": [
+      "science",
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml",
+    "main_url": "https://www.bbc.com/news/world/latin_america",
+    "name": "BBC Latin America",
+    "topics": [
+      "news",
+      "latin america"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.engadget.com/rss.xml",
+    "main_url": "https://www.engadget.com",
+    "name": "Engadget",
+    "topics": [
+      "technology",
+      "gadgets",
+      "consumer electronics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.zdnet.com/news/rss.xml",
+    "main_url": "https://www.zdnet.com",
+    "name": "ZDNet",
+    "topics": [
+      "technology",
+      "business",
+      "it"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.wired.com/feed/category/business/latest/rss",
+    "main_url": "https://www.wired.com/category/business",
+    "name": "Wired Business",
+    "topics": [
+      "business",
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.newscientist.com/feed/home",
+    "main_url": "https://www.newscientist.com",
+    "name": "New Scientist",
+    "topics": [
+      "science",
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.sciencedaily.com/rss/all.xml",
+    "main_url": "https://www.sciencedaily.com",
+    "name": "ScienceDaily",
+    "topics": [
+      "science",
+      "research"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.science.org/rss/news_current.xml",
+    "main_url": "https://www.science.org",
+    "name": "Science Magazine",
+    "topics": [
+      "science",
+      "research",
+      "academic"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.economist.com/finance-and-economics/rss.xml",
+    "main_url": "https://www.economist.com",
+    "name": "The Economist - finance and economics",
+    "topics": [
+      "economics",
+      "business"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.economist.com/science-and-technology/rss.xml",
+    "main_url": "https://www.economist.com",
+    "name": "The Economist - science and technology",
+    "topics": [
+      "science",
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.economist.com/the-americas/rss.xml",
+    "main_url": "https://www.economist.com",
+    "name": "The Economist - The Americas",
+    "topics": [
+      "news",
+      "americas"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.economist.com/culture/rss.xml",
+    "main_url": "https://www.economist.com",
+    "name": "The Economist - culture",
+    "topics": [
+      "culture"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.economist.com/asia/rss.xml",
+    "main_url": "https://www.economist.com",
+    "name": "The Economist - Asia",
+    "topics": [
+      "asia"
+    ],
+    "languages": [
+      "en"
+    ]
+  },{
+    "rss_url": "https://www.economist.com/middle-east-and-africa/rss.xml",
+    "main_url": "https://www.economist.com",
+    "name": "The Economist - Middle East and Africa",
+    "topics": [
+      "africa",
+      "middle east"
+    ],
+    "languages": [
+      "en"
+    ]
+  },{
+    "rss_url": "https://www.economist.com/europe/rss.xml",
+    "main_url": "https://www.economist.com",
+    "name": "The Economist - Europe",
+    "topics": [
+      "europe",
+      "news"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.economist.com/business/rss.xml",
+    "main_url": "https://www.economist.com",
+    "name": "The Economist - business",
+    "topics": [
+      "economics",
+      "business"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.livescience.com/feeds/all",
+    "main_url": "https://www.livescience.com",
+    "name": "Live Science",
+    "topics": [
+      "science",
+      "technology",
+      "health"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.sciencenews.org/feed",
+    "main_url": "https://www.sciencenews.org",
+    "name": "Science News",
+    "topics": [
+      "science",
+      "research"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bloomberg.com/technology/news.rss",
+    "main_url": "https://www.bloomberg.com",
+    "name": "Bloomberg",
+    "topics": [
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bloomberg.com/markets/news.rss",
+    "main_url": "https://www.bloomberg.com",
+    "name": "Bloomberg",
+    "topics": [
+      "markets"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.bloomberg.com/politics/news.rss",
+    "main_url": "https://www.bloomberg.com",
+    "name": "Bloomberg",
+    "topics": [
+      "politics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },  {
+    "rss_url": "https://feeds.bloomberg.com/economics/news.rss",
+    "main_url": "https://www.bloomberg.com",
+    "name": "Bloomberg",
+    "topics": [
+      "economics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },{
+    "rss_url": "https://feeds.bloomberg.com/industries/news.rss",
+    "main_url": "https://www.bloomberg.com",
+    "name": "Bloomberg",
+    "topics": [
+      "industries"
+    ],
+    "languages": [
+      "en"
+    ]
+  },{
+    "rss_url": "https://feeds.bloomberg.com/green/news.rss",
+    "main_url": "https://www.bloomberg.com",
+    "name": "Bloomberg",
+    "topics": [
+      "environment"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+{
+    "rss_url": "https://feeds.bloomberg.com/business/news.rss",
+    "main_url": "https://www.bloomberg.com",
+    "name": "Bloomberg",
+    "topics": [
+      "business"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.gizmodo.com/rss",
+    "main_url": "https://www.gizmodo.com",
+    "name": "Gizmodo",
+    "topics": [
+      "technology",
+      "science",
+      "gadgets"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.cbsnews.com/latest/rss/science",
+    "main_url": "https://www.cbsnews.com/science",
+    "name": "CBS Science",
+    "topics": [
+      "science",
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://arstechnica.com/security/feed",
+    "main_url": "https://arstechnica.com/security",
+    "name": "Ars Technica Security",
+    "topics": [
+      "security",
+      "infosec",
+      "cybersecurity"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.nature.com/nature.rss",
+    "main_url": "https://www.nature.com",
+    "name": "Nature",
+    "topics": [
+      "science",
+      "research",
+      "academic"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://arstechnica.com/ai/feed",
+    "main_url": "https://arstechnica.com/ai",
+    "name": "Ars Technica AI",
+    "topics": [
+      "ai",
+      "machine learning"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://phys.org/rss-feed/",
+    "main_url": "https://phys.org",
+    "name": "Phys.org",
+    "topics": [
+      "physics",
+      "science",
+      "research"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://arstechnica.com/space/feed",
+    "main_url": "https://arstechnica.com/space",
+    "name": "Ars Technica Space",
+    "topics": [
+      "space",
+      "astronomy"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.npr.org/1007/rss.xml",
+    "main_url": "https://www.npr.org/sections/science",
+    "name": "NPR Science",
+    "topics": [
+      "science",
+      "health"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://arstechnica.com/gadgets/feed",
+    "main_url": "https://arstechnica.com/gadgets",
+    "name": "Ars Technica Gadgets",
+    "topics": [
+      "technology",
+      "gadgets",
+      "reviews"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://arstechnica.com/science/feed",
+    "main_url": "https://arstechnica.com/science",
+    "name": "Ars Technica Science",
+    "topics": [
+      "science",
+      "research"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.schneier.com/feed/atom/",
+    "main_url": "https://www.schneier.com",
+    "name": "Schneier on Security",
+    "topics": [
+      "security",
+      "privacy",
+      "cryptography"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/news",
+    "main_url": "https://www.espn.com",
+    "name": "ESPN Top Headlines",
+    "topics": [
+      "sports",
+      "news"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/nhl/news",
+    "main_url": "https://www.espn.com/nhl",
+    "name": "ESPN NHL",
+    "topics": [
+      "sports",
+      "hockey",
+      "nhl"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://krebsonsecurity.com/feed/",
+    "main_url": "https://krebsonsecurity.com",
+    "name": "Krebs on Security",
+    "topics": [
+      "cybersecurity",
+      "infosec",
+      "hacking"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/ncf/news",
+    "main_url": "https://www.espn.com/college-football",
+    "name": "ESPN College Football",
+    "topics": [
+      "sports",
+      "football",
+      "college"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/soccer/news",
+    "main_url": "https://www.espn.com/soccer",
+    "name": "ESPN Soccer",
+    "topics": [
+      "sports",
+      "soccer",
+      "football"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://threatpost.com/feed/",
+    "main_url": "https://threatpost.com",
+    "name": "Threatpost",
+    "topics": [
+      "cybersecurity",
+      "threats",
+      "vulnerabilities"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/nba/news",
+    "main_url": "https://www.espn.com/nba",
+    "name": "ESPN NBA",
+    "topics": [
+      "sports",
+      "basketball",
+      "nba"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/mlb/news",
+    "main_url": "https://www.espn.com/mlb",
+    "name": "ESPN MLB",
+    "topics": [
+      "sports",
+      "baseball",
+      "mlb"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.csoonline.com/feed",
+    "main_url": "https://www.csoonline.com",
+    "name": "CSO Online",
+    "topics": [
+      "cybersecurity",
+      "ciso",
+      "enterprise security"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/ncb/news",
+    "main_url": "https://www.espn.com/mens-college-basketball",
+    "name": "ESPN College Basketball",
+    "topics": [
+      "sports",
+      "basketball",
+      "college"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://blog.malwarebytes.com/feed/",
+    "main_url": "https://blog.malwarebytes.com",
+    "name": "Malwarebytes Labs",
+    "topics": [
+      "cybersecurity",
+      "malware",
+      "threats"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/tennis/news",
+    "main_url": "https://www.espn.com/tennis",
+    "name": "ESPN Tennis",
+    "topics": [
+      "sports",
+      "tennis"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theregister.com/security/headlines.atom",
+    "main_url": "https://www.theregister.com/security",
+    "name": "The Register Security",
+    "topics": [
+      "cybersecurity",
+      "infosec"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.darkreading.com/rss.xml",
+    "main_url": "https://www.darkreading.com",
+    "name": "Dark Reading",
+    "topics": [
+      "cybersecurity",
+      "infosec",
+      "enterprise security"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/nfl/news",
+    "main_url": "https://www.espn.com/nfl",
+    "name": "ESPN NFL",
+    "topics": [
+      "sports",
+      "football",
+      "nfl"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/golf/news",
+    "main_url": "https://www.espn.com/golf",
+    "name": "ESPN Golf",
+    "topics": [
+      "sports",
+      "golf"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.bleepingcomputer.com/feed/",
+    "main_url": "https://www.bleepingcomputer.com",
+    "name": "BleepingComputer",
+    "topics": [
+      "cybersecurity",
+      "malware",
+      "tech support"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.buzzfeed.com/celebrity.xml",
+    "main_url": "https://www.buzzfeed.com/celebrity",
+    "name": "BuzzFeed Celebrity",
+    "topics": [
+      "celebrity",
+      "entertainment"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/boxing/news",
+    "main_url": "https://www.espn.com/boxing",
+    "name": "ESPN Boxing",
+    "topics": [
+      "sports",
+      "boxing"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://thehackernews.com/feeds/posts/default",
+    "main_url": "https://thehackernews.com",
+    "name": "The Hacker News",
+    "topics": [
+      "cybersecurity",
+      "hacking",
+      "data breaches"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.espn.com/espn/rss/rpm/news",
+    "main_url": "https://www.espn.com/racing",
+    "name": "ESPN Racing",
+    "topics": [
+      "sports",
+      "racing",
+      "motorsports"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://nakedsecurity.sophos.com/feed/",
+    "main_url": "https://nakedsecurity.sophos.com",
+    "name": "Sophos Naked Security",
+    "topics": [
+      "cybersecurity",
+      "privacy",
+      "malware"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.scmagazine.com/feed",
+    "main_url": "https://www.scmagazine.com",
+    "name": "SC Magazine",
+    "topics": [
+      "cybersecurity",
+      "infosec"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.wsj.com/xml/rss/3_7085.xml",
+    "main_url": "https://www.wsj.com",
+    "name": "Wall Street Journal",
+    "topics": [
+      "business",
+      "finance",
+      "news"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.tmz.com/rss.xml",
+    "main_url": "https://www.tmz.com",
+    "name": "TMZ",
+    "topics": [
+      "celebrity",
+      "gossip",
+      "entertainment"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml",
+    "main_url": "https://www.eonline.com",
+    "name": "E! News",
+    "topics": [
+      "entertainment",
+      "celebrity"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://pagesix.com/feed/",
+    "main_url": "https://pagesix.com",
+    "name": "Page Six",
+    "topics": [
+      "celebrity",
+      "gossip"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://perezhilton.com/feed/",
+    "main_url": "https://perezhilton.com",
+    "name": "Perez Hilton",
+    "topics": [
+      "celebrity",
+      "gossip",
+      "entertainment"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://fortune.com/feed/",
+    "main_url": "https://fortune.com",
+    "name": "Fortune",
+    "topics": [
+      "business",
+      "finance"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.businessinsider.com/rss",
+    "main_url": "https://www.businessinsider.com",
+    "name": "Business Insider",
+    "topics": [
+      "business",
+      "finance",
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://newsfeed.zeit.de/index",
+    "main_url": "https://www.zeit.de",
+    "name": "Die Zeit",
+    "topics": [
+      "news",
+      "politics",
+      "culture"
+    ],
+    "languages": [
+      "de"
+    ]
+  },
+  {
+    "rss_url": "https://www.spiegel.de/international/index.rss",
+    "main_url": "https://www.spiegel.de",
+    "name": "Der Spiegel International",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "de",
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.ft.com/rss/home",
+    "main_url": "https://www.ft.com",
+    "name": "Financial Times",
+    "topics": [
+      "business",
+      "finance",
+      "economy"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.welt.de/feeds/latest.rss",
+    "main_url": "https://www.welt.de",
+    "name": "Die Welt",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "de"
+    ]
+  },
+  {
+    "rss_url": "https://www.lemonde.fr/rss/une.xml",
+    "main_url": "https://www.lemonde.fr",
+    "name": "Le Monde",
+    "topics": [
+      "news",
+      "politics",
+      "international"
+    ],
+    "languages": [
+      "fr"
+    ]
+  },
+  {
+    "rss_url": "https://www.investing.com/rss/news.rss",
+    "main_url": "https://www.investing.com",
+    "name": "Investing.com",
+    "topics": [
+      "finance",
+      "markets",
+      "investing"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.tagesschau.de/xml/rss2/",
+    "main_url": "https://www.tagesschau.de",
+    "name": "Tagesschau",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "de"
+    ]
+  },
+  {
+    "rss_url": "https://www.faz.net/rss/aktuell/",
+    "main_url": "https://www.faz.net",
+    "name": "Frankfurter Allgemeine Zeitung",
+    "topics": [
+      "news",
+      "business",
+      "politics"
+    ],
+    "languages": [
+      "de"
+    ]
+  },
+  {
+    "rss_url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+    "main_url": "https://www.lefigaro.fr",
+    "name": "Le Figaro",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "fr"
+    ]
+  },
+  {
+    "rss_url": "https://www.abc.es/rss/feeds/abc_portada.xml",
+    "main_url": "https://www.abc.es",
+    "name": "ABC",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "es"
+    ]
+  },
+  {
+    "rss_url": "https://www.lavanguardia.com/rss/home.xml",
+    "main_url": "https://www.lavanguardia.com",
+    "name": "La Vanguardia",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "es"
+    ]
+  },
+  {
+    "rss_url": "https://deadline.com/feed/",
+    "main_url": "https://deadline.com",
+    "name": "Deadline",
+    "topics": [
+      "entertainment",
+      "movies",
+      "tv"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+    "main_url": "https://www.elmundo.es",
+    "name": "El Mundo",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "es"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+    "main_url": "https://elpais.com",
+    "name": "El País",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "es"
+    ]
+  },
+  {
+    "rss_url": "https://www.zdnet.com/topic/security/rss.xml",
+    "main_url": "https://www.zdnet.com/topic/security",
+    "name": "ZDNet Security",
+    "topics": [
+      "cybersecurity",
+      "enterprise security"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.20minutes.fr/feeds/rss-une.xml",
+    "main_url": "https://www.20minutes.fr",
+    "name": "20 Minutes",
+    "topics": [
+      "news",
+      "local"
+    ],
+    "languages": [
+      "fr"
+    ]
+  },
+  {
+    "rss_url": "https://www.eldiario.es/rss",
+    "main_url": "https://www.eldiario.es",
+    "name": "elDiario.es",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "es"
+    ]
+  },
+  {
+    "rss_url": "https://www.corriere.it/rss/homepage.xml",
+    "main_url": "https://www.corriere.it",
+    "name": "Corriere della Sera",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "it"
+    ]
+  },
+  {
+    "rss_url": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
+    "main_url": "https://www.repubblica.it",
+    "name": "La Repubblica",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "it"
+    ]
+  },
+  {
+    "rss_url": "https://meduza.io/rss2/all",
+    "main_url": "https://meduza.io",
+    "name": "Meduza",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "en",
+      "ru"
+    ]
+  },
+  {
+    "rss_url": "https://www.lastampa.it/rss.xml",
+    "main_url": "https://www.lastampa.it",
+    "name": "La Stampa",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "it"
+    ]
+  },
+  {
+    "rss_url": "https://www.rollingstone.com/feed/",
+    "main_url": "https://www.rollingstone.com",
+    "name": "Rolling Stone",
+    "topics": [
+      "music",
+      "culture"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.rt.com/rss/",
+    "main_url": "https://www.rt.com",
+    "name": "RT",
+    "topics": [
+      "news",
+      "international"
+    ],
+    "languages": [
+      "en",
+      "ru"
+    ]
+  },
+  {
+    "rss_url": "https://www.aljazeera.com/xml/rss/all.xml",
+    "main_url": "https://www.aljazeera.com",
+    "name": "Al Jazeera",
+    "topics": [
+      "news",
+      "middle east",
+      "international"
+    ],
+    "languages": [
+      "en",
+      "ar"
+    ]
+  },
+  {
+    "rss_url": "https://www.cgtn.com/subscribe/rss/section/china.xml",
+    "main_url": "https://www.cgtn.com",
+    "name": "CGTN",
+    "topics": [
+      "news",
+      "china"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ]
+  },
+  {
+    "rss_url": "https://www.timesofisrael.com/feed/",
+    "main_url": "https://www.timesofisrael.com",
+    "name": "Times of Israel",
+    "topics": [
+      "news",
+      "israel"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+    "main_url": "https://timesofindia.indiatimes.com",
+    "name": "Times of India",
+    "topics": [
+      "news",
+      "india"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.scmp.com/rss/91/feed",
+    "main_url": "https://www.scmp.com",
+    "name": "South China Morning Post",
+    "topics": [
+      "news",
+      "hong kong",
+      "china"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://sputnikglobe.com/export/rss2/world/index.xml",
+    "main_url": "https://sputnikglobe.com",
+    "name": "Sputnik",
+    "topics": [
+      "news",
+      "international"
+    ],
+    "languages": [
+      "en",
+      "ru"
+    ]
+  },
+  {
+    "rss_url": "https://www.euronews.com/rss",
+    "main_url": "https://www.euronews.com",
+    "name": "Euronews",
+    "topics": [
+      "news",
+      "europe",
+      "international"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.haaretz.com/cmlink/1.628075",
+    "main_url": "https://www.haaretz.com",
+    "name": "Haaretz",
+    "topics": [
+      "news",
+      "israel",
+      "middle east"
+    ],
+    "languages": [
+      "en",
+      "he"
+    ]
+  },
+  {
+    "rss_url": "https://www.hollywoodreporter.com/feed/",
+    "main_url": "https://www.hollywoodreporter.com",
+    "name": "The Hollywood Reporter",
+    "topics": [
+      "entertainment",
+      "movies",
+      "tv"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.npr.org/1001/rss.xml",
+    "main_url": "https://www.npr.org",
+    "name": "NPR News",
+    "topics": [
+      "news",
+      "us"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://variety.com/feed/",
+    "main_url": "https://variety.com",
+    "name": "Variety",
+    "topics": [
+      "entertainment",
+      "movies",
+      "tv"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.liberation.fr/arc/outboundfeeds/rss-all/",
+    "main_url": "https://www.liberation.fr",
+    "name": "Libération",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "fr"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.npr.org/1004/rss.xml",
+    "main_url": "https://www.npr.org/sections/world",
+    "name": "NPR World",
+    "topics": [
+      "news",
+      "world"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.npr.org/1017/rss.xml",
+    "main_url": "https://www.npr.org/sections/technology",
+    "name": "NPR Technology",
+    "topics": [
+      "technology"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.vox.com/rss/index.xml",
+    "main_url": "https://www.vox.com",
+    "name": "Vox",
+    "topics": [
+      "news",
+      "politics",
+      "explainers"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+    "main_url": "https://www.foxnews.com",
+    "name": "Fox News",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.billboard.com/feed/",
+    "main_url": "https://www.billboard.com",
+    "name": "Billboard",
+    "topics": [
+      "music",
+      "entertainment"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+    "main_url": "https://www3.nhk.or.jp",
+    "name": "NHK News",
+    "topics": [
+      "news",
+      "japan"
+    ],
+    "languages": [
+      "ja"
+    ]
+  },
+  {
+    "rss_url": "https://www.huffpost.com/section/front-page/feed",
+    "main_url": "https://www.huffpost.com",
+    "name": "HuffPost",
+    "topics": [
+      "news",
+      "politics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.feedburner.com/breitbart",
+    "main_url": "https://www.breitbart.com",
+    "name": "Breitbart",
+    "topics": [
+      "news",
+      "politics",
+      "conservative"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.theguardian.com/environment/climate-change/rss",
+    "main_url": "https://www.theguardian.com/environment/climate-change",
+    "name": "Guardian Climate Change",
+    "topics": [
+      "climate",
+      "environment"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://feeds.npr.org/1006/rss.xml",
+    "main_url": "https://www.npr.org/sections/politics",
+    "name": "NPR Politics",
+    "topics": [
+      "politics"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.cbc.ca/cmlink/rss-topstories",
+    "main_url": "https://www.cbc.ca",
+    "name": "CBC News",
+    "topics": [
+      "news",
+      "canada"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.pcgamer.com/rss/",
+    "main_url": "https://www.pcgamer.com",
+    "name": "PC Gamer",
+    "topics": [
+      "gaming",
+      "pc"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://kotaku.com/rss",
+    "main_url": "https://kotaku.com",
+    "name": "Kotaku",
+    "topics": [
+      "gaming",
+      "culture"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.gamespot.com/feeds/mashup/",
+    "main_url": "https://www.gamespot.com",
+    "name": "GameSpot",
+    "topics": [
+      "gaming"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.thehindu.com/feeder/default.rss",
+    "main_url": "https://www.thehindu.com",
+    "name": "The Hindu",
+    "topics": [
+      "news",
+      "india"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.treehugger.com/feeds",
+    "main_url": "https://www.treehugger.com",
+    "name": "Treehugger",
+    "topics": [
+      "environment",
+      "sustainability"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.abc.net.au/news/feed/51120/rss.xml",
+    "main_url": "https://www.abc.net.au",
+    "name": "ABC News Australia",
+    "topics": [
+      "news",
+      "australia"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "rss_url": "https://www.polygon.com/rss/index.xml",
+    "main_url": "https://www.polygon.com",
+    "name": "Polygon",
+    "topics": [
+      "gaming",
+      "entertainment"
+    ],
+    "languages": [
+      "en"
+    ]
+  }
+]
