@@ -2,7 +2,6 @@
 
 import { formatDistanceToNow } from 'date-fns';
 import { FeedItem, FeedSource } from '@/lib/types';
-import { getContentExcerpt } from '@/utils/content';
 
 interface ArticleListItemProps {
     article: FeedItem;
@@ -16,8 +15,7 @@ export function ArticleListItem({
     feedSource,
     onMarkAsRead,
     onToggleStar,
-}: ArticleListItemProps) {
-  const contentExcerpt = getContentExcerpt(article.content || article.description || '', 500);
+}: Readonly<ArticleListItemProps>) {
 
   const handleToggleRead = (e: React.MouseEvent) => {
         e.preventDefault();

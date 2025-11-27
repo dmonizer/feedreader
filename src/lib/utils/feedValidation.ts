@@ -35,7 +35,7 @@ export async function validateRssFeed(url: string): Promise<{
       };
     }
 
-    const response = await fetch(`/api/rss-proxy?url=${encodeURIComponent(url)}`);
+    const response = await fetch(`/api/proxy?url=${encodeURIComponent(url)}`);
 
     if (!response.ok) {
       return {

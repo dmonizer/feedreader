@@ -4,14 +4,14 @@ const getContentExcerpt = (content: string, maxLength: number = 350): string => 
 
   // Remove HTML tags and normalize whitespace
   const cleanContent = content
-    .replaceAll(/<[^>]*>/g, '')
-    .replaceAll('&nbsp;', ' ')
-    .replaceAll('&amp;', '&')
-    .replaceAll('&lt;', '<')
-    .replaceAll('&gt;', '>')
-    .replaceAll('&quot;', '"')
-    .replaceAll('&#39;', '\'')
-    .replaceAll(/\s+/g, ' ')
+    .replace(/<[^>]*>/g, '')
+    .replace('&nbsp;', ' ')
+    .replace('&amp;', '&')
+    .replace('&lt;', '<')
+    .replace('&gt;', '>')
+    .replace('&quot;', '"')
+    .replace('&#39;', '\'')
+    .replace(/\s+/g, ' ')
     .trim();
 
   if (cleanContent.length <= maxLength) return cleanContent;

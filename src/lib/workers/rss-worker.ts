@@ -1,8 +1,7 @@
 // RSS Worker for background feed processing
 import Parser from 'rss-parser';
-import { WorkerMessage, WorkerResponse, FeedItem, ParsedFeed, FeedSource } from '@/lib/types';
+import { FeedItem, FeedSource, ParsedFeed, WorkerMessage, WorkerResponse } from '@/lib/types';
 import { shouldHideContent } from '@/lib/utils/ignoredWords';
-import logger from '@/logger';
 
 class RSSWorker {
   private readonly parser: Parser;
@@ -20,10 +19,6 @@ class RSSWorker {
   }
 
   async handleMessage(message: WorkerMessage): Promise<void> {
-    const logMsg = `RSS-WORKER received a message of type '${message.type}' with payload: '${message.payload}'`
-    console.log(logMsg)
-    logger.log(logMsg)
-
     try {
       switch (message.type) {
         case 'UPDATE_FEED':
@@ -83,7 +78,7 @@ class RSSWorker {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
 
-      const proxyUrl = `/api/rss-proxy?url=${encodeURIComponent(feedUrl)}`;
+      const proxyUrl = `/api/proxy?url=${encodeURIComponent(feedUrl)}`;
       const response = await fetch(proxyUrl, {
         signal: controller.signal,
         headers: {
@@ -338,7 +333,7 @@ class RSSWorker {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
 
-      const response = await fetch(url, {
+      const response = await fetch("/api/proxy?ogUrl="+url, {
         signal: controller.signal,
         headers: {
           'User-Agent': 'Mozilla/5.0 (compatible; RSS Reader Bot 1.0)',
@@ -347,27 +342,19 @@ class RSSWorker {
 
       clearTimeout(timeoutId);
 
-      if (!response.ok) return undefined;
-
-      const html = await response.text();
-
-      // Extract og:image from meta tags
-      const ogImageMatch = html.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i);
-      if (ogImageMatch && ogImageMatch[1]) {
-        return ogImageMatch[1];
+      if (!response.ok) {
+        return undefined;
       }
 
-      // Also try reversed attribute order
-      const ogImageMatch2 = html.match(/<meta\s+content=["']([^"']+)["']\s+property=["']og:image["']/i);
-      if (ogImageMatch2 && ogImageMatch2[1]) {
-        return ogImageMatch2[1];
+      const json = await response.json();
+
+      if (json.ogImage && typeof json.ogImage === 'string') {
+        return json.ogImage;
       }
 
       return undefined;
 
     } catch (ignored) {       // eslint-disable-line @typescript-eslint/no-unused-vars
-      // Silently fail - og:image is optional
-
       return undefined;
     }
   }

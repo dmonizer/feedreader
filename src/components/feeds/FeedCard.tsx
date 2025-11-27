@@ -11,13 +11,13 @@ interface FeedCardProps {
   onDelete: (feed: FeedSource) => void;
 }
 
-export function FeedCard({ feed, onEdit, onDelete }: FeedCardProps) {
+export function FeedCard({ feed, onEdit, onDelete }: Readonly<FeedCardProps>) {
   const [loading, setLoading] = useState(false);
 
   const handleTest = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`/api/rss-proxy?url=${encodeURIComponent(feed.url)}`);
+      const response = await fetch(`/api/proxy?url=${encodeURIComponent(feed.url)}`);
       const status = response.ok ? 'success' : 'error';
 
       // Could show toast notification here

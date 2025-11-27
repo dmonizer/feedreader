@@ -156,7 +156,7 @@ class RSSServiceWorker {
       console.log(`Updating feed: ${feed.title}`);
 
       // Fetch RSS feed
-      const response = await fetch(`/api/rss-proxy?url=${encodeURIComponent(feed.url)}`, {
+      const response = await fetch(`/api/proxy?url=${encodeURIComponent(feed.url)}`, {
         headers: {
           'User-Agent': 'RSS Reader Service Worker 1.0',
         },
@@ -309,7 +309,7 @@ class RSSServiceWorker {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
 
-      const response = await fetch(url, {
+      const response = await fetch(`/api/proxy/?url=${url}`, {
         signal: controller.signal,
         headers: {
           'User-Agent': 'Mozilla/5.0 (compatible; RSS Reader Bot 1.0)',
@@ -336,7 +336,7 @@ class RSSServiceWorker {
 
       return undefined;
     } catch (error) {
-      console.error("error loading image:",error)
+        console.error("error loading og:image from :"+url,error)
       // Silently fail - og:image is optional
       return undefined;
     }

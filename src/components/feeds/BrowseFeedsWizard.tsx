@@ -20,7 +20,7 @@ export function BrowseFeedsWizard({
   onClose,
   onAddFeeds,
   existingFeeds,
-}: BrowseFeedsWizardProps) {
+}: Readonly<BrowseFeedsWizardProps>) {
   const [currentStep, setCurrentStep] = useState<WizardStep>('language');
   const [initialFeeds, setInitialFeeds] = useState<InitialFeedData[]>([]);
   const [loading, setLoading] = useState(true);

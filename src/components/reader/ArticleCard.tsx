@@ -25,7 +25,7 @@ export function ArticleCard({
   isSelected = false,
   onFocus,
   tabIndex = 0,
-}: ArticleCardProps) {
+}: Readonly<ArticleCardProps>) {
   const [isUpdating, setIsUpdating] = useState(false);
   const [showContextMenu, setShowContextMenu] = useState(false);
   const [contextMenuPosition, setContextMenuPosition] = useState({ x: 0, y: 0 });
@@ -172,23 +172,6 @@ export function ArticleCard({
     return categoryText
   };
 
-
-  const outputCategories = (c: string, i: number) => {
-    const fullLength = c
-    if (c && c.length > 10) {
-      c = c.slice(0, 25) + '..'
-    }
-
-    return (
-      <span
-        key={'k_' + i}
-        className="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-1.5 py-0.5 rounded text-[10px]"
-        title={fullLength}>
-        {c}
-      </span>);
-  };
-
-
   return (
     <article
       ref={cardRef}
@@ -221,7 +204,7 @@ export function ArticleCard({
             {/* Source Name */}
             <div className="flex items-center gap-2">
               {feedSource?.favicon && (
-                <img
+                <Image
                   src={feedSource.favicon}
                   alt=""
                   className="w-4 h-4 rounded-sm opacity-70"
@@ -270,6 +253,9 @@ export function ArticleCard({
         <h3 className="text-lg font-bold text-white mb-4 leading-snug">
           {article.title}
         </h3>
+        {images?.length > 0 && (
+        <img src={images[0]} alt="Article Image" width={400} height={200} className="w-full h-48 object-cover rounded-lg mb-4" />
+        )}
 
         {/* Excerpt Box */}
         {(contentExcerpt || article.description) && (

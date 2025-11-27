@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { SearchBar } from './SearchBar';
 import type { FilterState, FeedSource } from '@/lib/types';
-import Image from 'next/image';
 
 interface FilterSidebarProps {
   filters: FilterState;
@@ -29,7 +28,7 @@ export function FilterSidebar({
   articleCounts,
   isExpanded = false,
   onExpandToggle
-}: FilterSidebarProps) {
+}: Readonly<FilterSidebarProps>) {
   const [tagsExpanded, setTagsExpanded] = useState(true);
   const [sourcesExpanded, setSourcesExpanded] = useState(true);
 

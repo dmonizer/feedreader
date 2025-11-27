@@ -210,7 +210,7 @@ export function useImportExport() {
       }
 
       // Validate the feed first
-      const response = await fetch(`/api/rss-proxy?url=${encodeURIComponent(url)}`);
+      const response = await fetch(`/api/proxy?url=${encodeURIComponent(url)}`);
       if (!response.ok) {
         throw new Error(`Failed to fetch feed: ${response.statusText}`);
       }
