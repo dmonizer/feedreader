@@ -17,12 +17,6 @@ export function ArticleListItem({
                                   onToggleStar,
                                 }: Readonly<ArticleListItemProps>) {
 
-  const handleToggleRead = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    onMarkAsRead?.(article.id, !article.isRead);
-  };
-
   const handleToggleStar = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
