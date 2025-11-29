@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ReaderLayout } from '@/components/reader/ReaderLayout';
 import { FilterSidebar } from '@/components/reader/FilterSidebar';
@@ -18,7 +18,7 @@ export default function Home() {
     selectedFeedIds: [],
     filterMode: 'OR',
     searchQuery: '',
-    showRead: true,
+    showRead: false,
     showStarred: true,
   });
   const [sidebarOpen, setSidebarOpen] = useState(false);
